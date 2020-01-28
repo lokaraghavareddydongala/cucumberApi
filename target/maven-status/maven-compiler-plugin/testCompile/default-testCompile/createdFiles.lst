@@ -1,4 +1,4 @@
 testcases\GoogleAPI.class
 stepdefination\GoogleSearchAPI.class
-tetsrunner\TestRunner.class
+tetsrunner\RunTest.class
 utility\GenerateStringFromResource.class

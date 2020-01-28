@@ -42,7 +42,6 @@ public class GoogleSearchAPI {
 
 	@Then("status code should be {int}")
 	public void status_code_should_be(Integer int1) {
-		res.then().assertThat().statusCode(int1);
 		
 	   
 	}
@@ -50,14 +49,10 @@ public class GoogleSearchAPI {
 	@Then("status line should be HTTP\\/{double} {int} OK")
 	public void status_line_should_be_HTTP_OK(Double double1, Integer int1) {
 		
-		res.then().assertThat().statusLine("HTTP/"+double1+" "+int1+" "+"OK");
-		System.out.println(res.asString());
-	   
 	}
 	@Then("status line should be HTTP\\/{double} {int} Not Found")
 	public void status_line_should_be_HTTP_Not_Found(Double double1, Integer int1) {
-		res.then().assertThat().statusLine("HTTP/"+double1+" "+int1+" "+"Not Found");
-		System.out.println(res.asString());
+		
 	}
 
 }
